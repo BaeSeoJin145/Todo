@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idea Sharing App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Idea Sharing Platform</h1>
+        <form id="ideaForm">
+            <div class="mb-3">
+                <input type="text" id="name" class="form-control" placeholder="Your name" required>
+            </div>
+            <div class="mb-3">
+                <textarea id="idea" class="form-control" placeholder="Your idea" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Idea</button>
+        </form>
+
+        <ul id="ideasList" class="list-group mt-4">
+            <!-- Ideas will be dynamically added here -->
+        </ul>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
